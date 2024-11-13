@@ -78,8 +78,31 @@ main {
   height: 300px; 
   margin-top: 25px;
   margin-bottom: 10px; 
+  animation: fade 3s forwards, pulse 3s forwards ;
   
  
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .intro .escudo img{
@@ -97,6 +120,9 @@ main {
   font-family:"Harry Potter";
   font-weight: 400;
   font-style: normal;
+  animation: fade 3s forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .intro p{
@@ -105,7 +131,9 @@ main {
   0 0 2em rgb(105, 4, 247),
   0 0 0.3em rgb(8, 255, 226); 
   color: var(--color-secundario);
-  
+  animation: fade 4s forwards ;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 
