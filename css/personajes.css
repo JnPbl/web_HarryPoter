@@ -83,3 +83,14 @@
     font-family: "Cinzel";
     color: rgb(163, 187, 187);
 }
+
+
+@media (max-width:480px){
+    .characters h1{
+        font-size: 40px;
+    }
+
+    .grid{
+        grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));  
+    }
+}
